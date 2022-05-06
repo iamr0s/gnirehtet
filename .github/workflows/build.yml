@@ -27,6 +27,12 @@ jobs:
 
       - name: Build Ready
         run: |
+          sudo apt -y update
+          sudo apt -y install liblapack3 liblapack-dev libopenblas-base libopenblas-dev liblapacke-dev liblapack-dev
+          sudo apt -y install binutils-mingw-w64-x86-64  binutils-mingw-w64-i686
+          sudo apt -y install mingw-w64-x86-64-dev mingw-w64-i686-dev
+          rustup target add x86_64-pc-windows-gnu
+          rustup target add i686-pc-windows-gnu
           # sudo apt -y install mingw64 mingw64-binutils mingw64-runtime
           # sudo apt -y install mingw32 mingw32-binutils mingw32-runtime
           # rustup target add x86_64-pc-windows-gnu
