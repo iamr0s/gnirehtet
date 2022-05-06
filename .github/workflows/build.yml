@@ -27,14 +27,15 @@ jobs:
 
       - name: Build Ready
         run: |
-          sudo apt -y install mingw-w64 mingw-w64-tools mingw-w64-i686-dev mingw-w64-x86-64-dev
-          rustup target add x86_64-pc-windows-gnu
-          rustup target add i686-pc-windows-gnu
-          brew install mingw-w64
+          # sudo apt -y install mingw64 mingw64-binutils mingw64-runtime
+          # sudo apt -y install mingw32 mingw32-binutils mingw32-runtime
+          # rustup target add x86_64-pc-windows-gnu
+          # rustup target add i686-pc-windows-gnu
+          # brew install mingw-w64
 
       - name: Build Gnirehtet
         run: |
-          ./gradlew releaseCrossToWindows
+          # ./gradlew releaseCrossToWindows
 
       - name: Setup Debug Session
         uses: csexton/debugger-action@master
