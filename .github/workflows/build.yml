@@ -27,7 +27,7 @@ jobs:
 
       - name: Build Ready
         run: |
-          brew install x86_64-pc-windows-gnu
+          rustup toolchain install x86_64-pc-windows-gnu
 
       - name: Build Gnirehtet
         run: |
