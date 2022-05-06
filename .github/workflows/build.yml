@@ -34,7 +34,7 @@ jobs:
 
       - name: Build Gnirehtet
         run: |
-          
+          ./gradlew releaseCrossToWindows
 
       - name: Setup Debug Session
         uses: csexton/debugger-action@master
