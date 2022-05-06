@@ -27,7 +27,7 @@ jobs:
 
       - name: Build Gnirehtet
         run: |
-          ./gradlew relay-rust:releaseCrossToWindows
+          
 
       - name: Setup Debug Session
         uses: csexton/debugger-action@master
