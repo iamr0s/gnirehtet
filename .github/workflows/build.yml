@@ -27,7 +27,8 @@ jobs:
 
       - name: Build Ready
         run: |
-          rustup toolchain install stable-x86_64-pc-windows-gnu
+          rustup target add x86_64-pc-windows-gnu
+          brew install mingw-w64
 
       - name: Build Gnirehtet
         run: |
